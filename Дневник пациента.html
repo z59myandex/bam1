@@ -1,0 +1,1037 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=h9PeGYHgPsL1mwgETyyeG0OklHMDmMUUZ2Shnzw86ruVpANd70YPH9vSmUiVADwI4-UnNrAp8v33XewBePFEqWiysyNMQ5Z2mSRb_aVy0oHX9bgRVOYb7BM4P1HLgrcTNuzS7mda3OAsZeHV1JrZBHd_EgDpCjCzeAGQgiI_78JheIButBapHy3omISI7BZD5Aj9cq3dN4qdHX1szJUsnVx1K8MqmYclZDD2KQpurLdUY7_Qnl2QUd0SaJTMqmAEVMYpBF6ZYJpu1-n0Y3gVLrdueHCnHKGFO2ZQa0RT5dBUrOfeKzhs3htvBcnKdSGbBDWOKWi1U-k0kSAVqIMyzcYaSrTZsfVbAFETHSdgngTP3FI9Ju61Hm4tpymRm_Ck6oxz91g6JieAVC9huXDr2bOFRNkM2kiOTQnZhEgb1O07rj_t-qW8nookuZRkzPEfAUvCZ1Q7rWdS9yQVMQ7EaV8KBKLSkV9CRnZqIofeyFeSHYgjl8xDG7tq-Yb9kPjNCXMya5Dky_Ge-SLls3hxnpNnXGmHZsRxSJDkk81f9y1ipASJNav3aO0v4U7d45K2SsSUb9h1jj68ul6ynkVHt8NB35Qgiz_CA0Zn66zWS9M4czqqw3eMaYCKmSgMUymd5AfihRMNt1RWLrLeCrtr3rSoJVrJpyE55qVY0BKzJhX8bSsVqszKRKzXwEy7-wHIF_Qdkfvluqq_ygWFnmEyzkE1Jj2N7cbCs-VhJhPyx6gZVpncyHIKKUyjs7Yhfqcqx13BkW478RBesFZ3ds-7yiJbnqan9VRz6IHMBwtK2tnSUSA9PCyKW5kHhUvc4Z5pM1o1UsnUetjdBPnMK4gUc7Q6tvhZbBiCT7KshkzJ-NiQkWDg6TK14zlPt1t4GDUKahwHOa5d7M_VlbHMMYd28ZDcE5a-ToJ6XUxJxSK5xW9izqYXSIefRYNCoqGKh7B7ubIEw6AD0-HeqKsY6VXdq-AJhV-vMtzBHgCP8QC9ISnRm9dNI29FqiErqw2blBgNoLf6UkA3nZWxoseOqJeso-s2Djd-BhKn8IZETkIqRsLBAg6In1SsaZQJU6Syo9WcUmc_UjJ0llqnA_mCxkJgA0zbgt8ovnICT7T_OBTd6bO15jDTLbCIoQpNcF9hDkGC4zwPJTJLsqkEeiqiqgbpiJuk_3m6pp4bgWAWHEhVEIgJTELLyP9vOTTgtcaKW16OlL1N4RmttgOEjWk4a72gqv9S3rwamiTTng7E7m1-bkQFFkSMhXWBPUTAb7iU6NXnX_NQDNrAGkVMneV9uPH8ouuke4k_xYyz_UHWLVgjFJ7P_DZb5BY5B4MGUi2pziaV9-ruZ2w0t2BGAMNsSDezLzQ7quq4e8FBLLFE3SAoejHDMLUq3Dbn-NAE_0S4poee3T-lLPpiXKIKFqwk9UkS730oBQVbGNAcrqigWnWnUhznYeK_HCVkSoOyhfaVL9fM5fVW3HfGN5ydUV4rMiE5ox5eoFOKxhuIWCucpzQKGVcmGGekYKxzM2O6AYE4i1Hb_mdYvZ_KeRLq_B_DwiOaYYy_uInM9t_5X4hEgM8vdfULf-EQ-Xuc4_JABtcbaeN8M4pGzTK2ze6TZ7IKO17_D_vpr7KYjDnkOlHh4zHazARx3SBk8PiKbSqJKkBf_keViob6J2xI3GlRR-tkgLHWB5s_GpOAYsGCQfwVqPCzmyTBCbWb-Kk8IISpV5RDmT30" nonce="b32525479a51c8830f73a1a1c6335929" charset="UTF-8"></script><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Дневник пациента</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Oswald:wght@400;500;600&family=PT+Mono&display=swap">
+<style>
+/* Layout: a dim hospital ward fills the screen; an old CRT terminal sits in it, day list on the left, the letter typing itself on the right. */
+:root {
+  --bg: #060908;
+  --screen: #0a100f;
+  --line: #243430;
+  --ink: #cfe0d4;
+  --ink-dim: #7d958a;
+  --ink-faint: #4b5e56;
+  --lamp: #e6d7a0;
+  --alarm: #d4402f;
+  --f-display: 'Oswald', 'Arial Narrow', Impact, sans-serif;
+  --f-type: 'PT Mono', 'Courier New', monospace;
+  --f-hand: 'Caveat', 'Segoe Script', cursive;
+  color-scheme: dark;
+}
+html, body { height: 100%; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font: 16px/1.5 var(--f-type);
+  overflow: hidden;
+}
+button { font: inherit; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* ---------- ward ---------- */
+.stage { position: relative; height: 100%; display: grid; place-items: center; padding-block: clamp(10px, 3vh, 32px); padding-inline: 16px; }
+.ward { position: absolute; inset: 0; width: 100%; height: 100%; transition: filter 3s ease; }
+.ward.dim { filter: brightness(.42) saturate(.8); }
+.ward.lit { filter: brightness(.9); }
+.ward .sec { transform-origin: 1010px 190px; animation: tick 60s steps(60) infinite; }
+.ward.t3 .sec { animation-duration: 9s; animation-direction: reverse; }
+@keyframes tick { to { transform: rotate(360deg); } }
+.ward.flick .lamp-glow { animation: lampflick 1.1s steps(1) 1; }
+@keyframes lampflick { 0% { opacity: .9; } 10% { opacity: .1; } 20% { opacity: .9; } 35% { opacity: 0; } 50% { opacity: .8; } 60% { opacity: .15; } 75% { opacity: .9; } 100% { opacity: .9; } }
+#doorLight { transform-box: fill-box; transform-origin: left center; transform: scaleX(0); transition: transform 4.5s ease-in-out; }
+#figure { opacity: 0; transition: opacity 3s ease 3.5s; }
+.ward.door-open #doorLight { transform: scaleX(1); }
+.ward.door-open #figure { opacity: 1; }
+.vignette { position: absolute; inset: 0; background: radial-gradient(ellipse at center, transparent 35%, rgba(0, 0, 0, .7) 100%); pointer-events: none; }
+.blackout { position: absolute; inset: 0; background: #000; opacity: 0; pointer-events: none; z-index: 15; }
+.blackout.go { animation: bo 1s steps(1) 1; }
+@keyframes bo { 0% { opacity: 0; } 8% { opacity: .75; } 18% { opacity: 0; } 30% { opacity: .55; } 38% { opacity: 0; } 55% { opacity: .8; } 64% { opacity: 0; } 100% { opacity: 0; } }
+
+/* ---------- monitor ---------- */
+.monitor { position: relative; width: min(1120px, 100%); height: 100%; max-height: 780px; }
+.monitor::before { content: ''; position: absolute; inset: -10%; background: radial-gradient(closest-side, rgba(150, 210, 185, .13), transparent); z-index: -1; pointer-events: none; }
+.bezel { height: 100%; display: grid; grid-template-rows: minmax(0, 1fr) auto; padding: 18px 18px 12px; border-radius: 26px; background: linear-gradient(160deg, #1b2221, #0b0f0e); box-shadow: 0 30px 80px rgba(0, 0, 0, .75), inset 0 0 0 1px #2a3633, inset 0 2px 0 rgba(255, 255, 255, .05); }
+.plate { display: flex; justify-content: space-between; align-items: center; padding: 10px 6px 0; font: 500 .7rem var(--f-display); letter-spacing: .32em; text-transform: uppercase; color: var(--ink-faint); }
+.led { width: 8px; height: 8px; border-radius: 50%; background: #7fd6a3; box-shadow: 0 0 8px #7fd6a3; animation: led 3.2s ease-in-out infinite; }
+@keyframes led { 50% { opacity: .35; } }
+.screen { position: relative; min-height: 0; display: grid; grid-template-rows: auto minmax(0, 1fr) auto; overflow: hidden; border-radius: 18px / 22px; background: radial-gradient(ellipse at 50% 40%, #101a18, var(--screen) 70%); box-shadow: inset 0 0 120px rgba(0, 0, 0, .7); animation: crt 5s steps(1) infinite; }
+.screen::after { content: ''; position: absolute; inset: 0; z-index: 6; pointer-events: none; background: repeating-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0 2px, rgba(0, 0, 0, .22) 2px 3px); }
+.roll { position: absolute; left: 0; right: 0; top: -20%; height: 18%; z-index: 5; pointer-events: none; background: linear-gradient(to bottom, transparent, rgba(190, 235, 210, .06), transparent); animation: roll 8s linear infinite; }
+@keyframes roll { to { top: 110%; } }
+@keyframes crt { 0%, 100% { opacity: 1; } 47% { opacity: .96; } 49% { opacity: 1; } 83% { opacity: .97; } 85% { opacity: 1; } }
+.noise { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; mix-blend-mode: screen; pointer-events: none; image-rendering: pixelated; z-index: 7; }
+.screen, .screen * { text-shadow: 0 0 6px rgba(180, 230, 205, .28); }
+
+.monitor.shake { animation: shake .4s linear 1; }
+@keyframes shake { 0% { transform: translate(0, 0); } 10% { transform: translate(-7px, 2px); } 20% { transform: translate(6px, -3px); } 30% { transform: translate(-5px, 4px) skewX(1deg); } 40% { transform: translate(7px, 0); } 55% { transform: translate(-3px, -3px); } 70% { transform: translate(4px, 3px); } 85% { transform: translate(-2px, 1px); } 100% { transform: translate(0, 0); } }
+.screen.glitch { animation: gl .3s steps(2) 1; }
+@keyframes gl { 0% { transform: translate(0); } 20% { transform: translate(-5px, 1px); filter: hue-rotate(60deg) contrast(1.4); } 40% { transform: translate(6px, -2px); } 60% { transform: translate(-3px, 3px); filter: hue-rotate(-40deg) saturate(2); } 80% { transform: translate(2px, 0); } 100% { transform: none; filter: none; } }
+.screen.glitch .paper, .screen.glitch h1 { text-shadow: -3px 0 rgba(255, 60, 60, .8), 3px 0 rgba(60, 230, 255, .8); }
+.screen.glitch-soft { filter: brightness(.8); }
+.monitor.off { animation: crtoff .9s cubic-bezier(.7, 0, .9, .4) forwards; }
+@keyframes crtoff { 0% { transform: scale(1, 1); filter: brightness(1); } 35% { transform: scale(1, .012); filter: brightness(3); } 70% { transform: scale(.25, .008); filter: brightness(5); } 100% { transform: scale(0, 0); filter: brightness(0); opacity: 0; } }
+.soft .monitor.off { animation: crtsoft 1.4s ease forwards; }
+@keyframes crtsoft { to { opacity: 0; } }
+.soft .screen, .soft .roll, .soft .led { animation: none; }
+.soft .blackout.go { animation: bosoft 1.6s ease 1; }
+@keyframes bosoft { 0% { opacity: 0; } 40% { opacity: .35; } 100% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .screen, .roll, .led { animation: none; } }
+
+/* ---------- header / footer ---------- */
+.bar { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 16px; padding: 10px 16px; border-bottom: 1px solid var(--line); }
+.bar h1 { margin: 0; font: 500 clamp(1.05rem, 2.4vw, 1.4rem) var(--f-display); letter-spacing: .2em; text-transform: uppercase; }
+.bar .meta { display: flex; flex-wrap: wrap; gap: 4px 18px; font-size: .78rem; color: var(--ink-dim); }
+#whoName.foreign { color: var(--alarm); }
+.status { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 18px; padding: 8px 16px; border-top: 1px solid var(--line); font-size: .74rem; color: var(--ink-dim); }
+.status .left { display: flex; flex-wrap: wrap; gap: 4px 18px; min-width: 0; }
+.status .right { display: flex; flex-wrap: wrap; gap: 6px; }
+.tgl { background: none; border: 1px solid var(--line); color: var(--ink-dim); padding: 3px 9px; border-radius: 2px; cursor: pointer; font-size: .74rem; }
+.tgl:hover { color: var(--ink); }
+.tgl[aria-pressed="true"] { color: var(--ink); border-color: var(--ink-dim); }
+
+/* ---------- body ---------- */
+.body { display: grid; grid-template-columns: 250px minmax(0, 1fr); min-height: 0; }
+.days { border-right: 1px solid var(--line); overflow-y: auto; padding: 8px 0; min-width: 0; }
+.days ol { list-style: none; margin: 0; padding: 0; }
+.day { display: flex; align-items: center; justify-content: space-between; gap: 10px; width: 100%; padding: 10px 16px; background: none; border: 0; border-left: 3px solid transparent; color: var(--ink); text-align: left; cursor: pointer; }
+.day:hover:not(:disabled) { background: rgba(207, 224, 212, .06); }
+.day[aria-current="true"] { border-left-color: var(--ink); background: rgba(207, 224, 212, .09); }
+.day:disabled { color: var(--ink-faint); cursor: not-allowed; }
+.day:focus-visible, .tgl:focus-visible, .go:focus-visible, .next:focus-visible, .again-link:focus-visible { outline: 2px solid var(--lamp); outline-offset: -2px; }
+.d-n { display: block; font-family: var(--f-display); letter-spacing: .14em; text-transform: uppercase; font-size: .95rem; }
+.d-s { display: block; font-size: .7rem; letter-spacing: .05em; color: var(--ink-dim); }
+.day:disabled .d-s { color: var(--ink-faint); }
+.day.fresh .d-s { color: var(--lamp); animation: pulse 1.6s ease-in-out infinite; }
+@keyframes pulse { 50% { opacity: .35; } }
+.d-i { flex: none; display: grid; place-items: center; width: 16px; height: 16px; color: var(--ink-dim); }
+.d-i svg { width: 14px; height: 14px; }
+
+.letter { position: relative; min-width: 0; overflow-y: auto; padding: clamp(14px, 3vw, 30px); }
+.l-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 14px; padding-bottom: 10px; margin-bottom: 18px; border-bottom: 1px dashed var(--line); }
+.l-day { margin: 0; font: 500 clamp(1.6rem, 4vw, 2.4rem) var(--f-display); letter-spacing: .1em; text-transform: uppercase; }
+.l-meta { font-size: .78rem; color: var(--ink-dim); }
+.paper { margin: 0; max-width: 62ch; min-width: 0; font-size: clamp(1rem, 1.9vw, 1.2rem); line-height: 1.75; white-space: pre-wrap; overflow-wrap: anywhere; }
+.cur { display: inline-block; width: .62em; height: 1.1em; margin-left: 1px; vertical-align: -.15em; background: var(--ink); box-shadow: 0 0 8px rgba(207, 224, 212, .5); }
+.cur.typing, .cur.freeze { animation: none; opacity: 1; }
+.cur.blink { animation: blink 1.06s steps(1) infinite; }
+.cur.idle { animation: blink 1.8s steps(1) infinite; }
+.cur.fast { animation: blink .22s steps(1) infinite; }
+.cur.gone { opacity: 0; animation: none; }
+.cur.twitch { animation: twitch .5s steps(2) 1; }
+@keyframes blink { 50% { opacity: 0; } }
+@keyframes twitch { 0% { transform: translate(0, 0); } 25% { transform: translate(-14px, 3px); } 50% { transform: translate(9px, -4px); } 75% { transform: translate(-5px, 0); } 100% { transform: translate(0, 0); } }
+.l-end { margin-top: 22px; font-size: .78rem; letter-spacing: .16em; text-transform: uppercase; color: var(--ink-faint); }
+.next { margin-top: 14px; padding: 9px 16px; background: none; border: 1px solid var(--ink-dim); color: var(--ink); font: 500 .95rem var(--f-display); letter-spacing: .16em; text-transform: uppercase; cursor: pointer; }
+.next:hover { background: rgba(207, 224, 212, .1); }
+.empty { max-width: 46ch; color: var(--ink-dim); }
+.empty p { margin: 0 0 10px; }
+.empty .big { color: var(--ink); font: 500 1.4rem var(--f-display); letter-spacing: .12em; text-transform: uppercase; }
+
+/* ---------- gate ---------- */
+.gate { position: absolute; inset: 0; z-index: 8; display: grid; place-items: center; padding: 20px; overflow-y: auto; background: radial-gradient(ellipse at 50% 40%, #101a18, var(--screen) 70%); }
+.gate-box { width: min(440px, 100%); display: grid; gap: 12px; }
+.g-room { margin: 0; font: 500 .8rem var(--f-display); letter-spacing: .32em; text-transform: uppercase; color: var(--ink-dim); }
+.g-title { margin: 0; font: 500 clamp(1.5rem, 5vw, 2.1rem) var(--f-display); letter-spacing: .14em; text-transform: uppercase; }
+.g-text { margin: 0; color: var(--ink-dim); font-size: .92rem; }
+.g-label { margin-top: 6px; font: 500 .75rem var(--f-display); letter-spacing: .22em; text-transform: uppercase; color: var(--ink-dim); }
+#nameIn { width: 100%; padding: 6px 0; background: transparent; border: 0; border-bottom: 1px solid var(--ink-dim); color: var(--ink); font: inherit; font-size: 1.15rem; caret-color: var(--ink); }
+#nameIn:focus { outline: none; border-bottom-color: var(--ink); }
+.g-check { display: flex; gap: 10px; align-items: center; font-size: .85rem; color: var(--ink-dim); cursor: pointer; }
+.g-check input { accent-color: #7fd6a3; width: 16px; height: 16px; }
+.g-warn { margin: 0; font-size: .78rem; color: var(--ink-faint); }
+.go { margin-top: 4px; padding: 11px 18px; background: var(--ink); color: var(--screen); border: 0; font: 500 1rem var(--f-display); letter-spacing: .2em; text-transform: uppercase; cursor: pointer; text-shadow: none; }
+.go:hover { background: #fff; }
+.again-link { justify-self: start; padding: 4px 0; background: none; border: 0; color: var(--ink-faint); font-size: .78rem; text-decoration: underline; cursor: pointer; }
+.again-link:hover { color: var(--ink-dim); }
+
+/* ---------- finale ---------- */
+.ghost { position: absolute; z-index: 4; font-family: var(--f-display); letter-spacing: .12em; white-space: nowrap; color: var(--alarm); text-shadow: 0 0 12px rgba(212, 64, 47, .6); pointer-events: none; }
+.ending { position: absolute; inset: 0; z-index: 12; display: grid; place-items: end center; padding: 16px 16px 6vh; pointer-events: none; }
+.card { pointer-events: auto; width: min(520px, 100%); padding: 18px 22px; background: rgba(6, 9, 8, .78); border: 1px solid var(--line); display: grid; gap: 6px; }
+.c-room { margin: 0; font: 500 .75rem var(--f-display); letter-spacing: .32em; text-transform: uppercase; color: var(--ink-dim); }
+.c-name { margin: 0; min-height: 1.5em; color: var(--ink); }
+.c-hand { margin: 0; min-height: 1.2em; font: 500 clamp(1.5rem, 5vw, 2rem) var(--f-hand); color: var(--lamp); }
+.c-last { margin: 0; min-height: 1.4em; font: 500 1rem var(--f-display); letter-spacing: .2em; text-transform: uppercase; color: var(--alarm); }
+
+/* ---------- phone ---------- */
+@media (max-width: 760px) {
+  .body { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto minmax(0, 1fr); }
+  .days { border-right: 0; border-bottom: 1px solid var(--line); padding: 0; overflow-x: auto; overflow-y: hidden; }
+  .days ol { display: flex; }
+  .day { min-width: 132px; border-left: 0; border-bottom: 3px solid transparent; padding: 8px 12px; }
+  .day[aria-current="true"] { border-bottom-color: var(--ink); }
+  .bezel { padding: 10px 10px 8px; border-radius: 18px; }
+  .plate .model { display: none; }
+  .status .right { width: 100%; }
+}
+</style>
+
+<div class="stage" id="stage">
+  <svg id="ward" class="ward dim" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="gWall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0b1110"/><stop offset="1" stop-color="#18231f"/></linearGradient>
+      <linearGradient id="gFloor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#121a18"/><stop offset="1" stop-color="#070b0a"/></linearGradient>
+      <radialGradient id="gLamp" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#e6d7a0" stop-opacity=".5"/><stop offset=".45" stop-color="#e6d7a0" stop-opacity=".12"/><stop offset="1" stop-color="#e6d7a0" stop-opacity="0"/></radialGradient>
+      <linearGradient id="gBeam" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8fb4c4" stop-opacity=".24"/><stop offset="1" stop-color="#8fb4c4" stop-opacity="0"/></linearGradient>
+      <linearGradient id="gCorr" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d6dcae" stop-opacity=".9"/><stop offset="1" stop-color="#d6dcae" stop-opacity=".4"/></linearGradient>
+    </defs>
+    <rect width="1600" height="650" fill="url(#gWall)"/>
+    <rect y="650" width="1600" height="250" fill="url(#gFloor)"/>
+    <rect y="636" width="1600" height="16" fill="#080d0c"/>
+    <!-- window with blinds -->
+    <rect x="330" y="120" width="280" height="330" fill="#070c0c"/>
+    <rect x="342" y="132" width="256" height="306" fill="#1a2a31"/>
+    <g fill="#0a1214" opacity=".9">
+      <rect x="342" y="140" width="256" height="20"/><rect x="342" y="174" width="256" height="20"/><rect x="342" y="208" width="256" height="20"/>
+      <rect x="342" y="242" width="256" height="20"/><rect x="342" y="276" width="256" height="20"/><rect x="342" y="310" width="256" height="20"/>
+      <rect x="342" y="344" width="256" height="20"/><rect x="342" y="378" width="256" height="20"/><rect x="342" y="412" width="256" height="20"/>
+    </g>
+    <rect x="322" y="450" width="296" height="10" fill="#0a1110"/>
+    <polygon points="342,438 598,438 780,830 250,830" fill="url(#gBeam)"/>
+    <!-- door -->
+    <rect x="52" y="200" width="186" height="440" fill="#0a0f0e"/>
+    <rect x="60" y="210" width="170" height="430" fill="#121a19"/>
+    <rect x="100" y="250" width="90" height="120" fill="#1d2d2c"/>
+    <circle cx="208" cy="450" r="7" fill="#3c4f4a"/>
+    <rect x="100" y="178" width="46" height="22" fill="#1b2725"/>
+    <text x="123" y="196" font-family="Oswald, Arial Narrow, sans-serif" font-size="19" fill="#9fb3a8" text-anchor="middle">7</text>
+    <rect x="62" y="632" width="166" height="6" fill="#cfd8a8" opacity=".45"/>
+    <g id="doorOpen">
+      <rect id="doorLight" x="60" y="210" width="170" height="430" fill="url(#gCorr)"/>
+      <g id="figure" fill="#030504">
+        <circle cx="146" cy="338" r="24"/>
+        <path d="M104 640 L108 392 Q146 362 184 392 L188 640 Z"/>
+      </g>
+    </g>
+    <!-- clock -->
+    <circle cx="1010" cy="190" r="48" fill="#0e1514" stroke="#2a3a37" stroke-width="5"/>
+    <line x1="1010" y1="190" x2="1010" y2="158" stroke="#7d958a" stroke-width="4"/>
+    <line x1="1010" y1="190" x2="1010" y2="168" stroke="#7d958a" stroke-width="5"/>
+    <line class="sec" x1="1010" y1="196" x2="1010" y2="150" stroke="#d4402f" stroke-width="2"/>
+    <circle cx="1010" cy="190" r="4" fill="#7d958a"/>
+    <!-- IV stand -->
+    <rect x="1070" y="636" width="80" height="8" fill="#1a2523"/>
+    <line x1="1110" y1="300" x2="1110" y2="636" stroke="#3a4a46" stroke-width="6"/>
+    <line x1="1088" y1="300" x2="1132" y2="300" stroke="#3a4a46" stroke-width="5"/>
+    <rect x="1096" y="306" width="30" height="58" rx="8" fill="#2b4642"/>
+    <path d="M1111 364 C1111 440 1160 470 1200 520" stroke="#3d5a55" stroke-width="2" fill="none"/>
+    <!-- bed -->
+    <rect x="1190" y="630" width="12" height="40" fill="#0a0f0e"/>
+    <rect x="1530" y="630" width="12" height="40" fill="#0a0f0e"/>
+    <rect x="1180" y="600" width="380" height="36" fill="#0c1211"/>
+    <rect x="1544" y="420" width="18" height="220" fill="#0f1716"/>
+    <rect x="1190" y="540" width="360" height="66" rx="10" fill="#1b2724"/>
+    <path d="M1190 566 H1430 Q1442 566 1442 578 V606 H1190 Z" fill="#22332f"/>
+    <path d="M1250 566 Q1262 586 1252 606 M1330 566 Q1342 586 1332 606" stroke="#18241f" stroke-width="3" fill="none"/>
+    <rect x="1450" y="512" width="94" height="40" rx="18" fill="#2c3d39"/>
+    <ellipse cx="1494" cy="524" rx="36" ry="12" fill="#18231f"/>
+    <!-- ceiling lamp -->
+    <line x1="800" y1="0" x2="800" y2="120" stroke="#0a100f" stroke-width="3"/>
+    <path d="M770 120 L830 120 L820 148 L780 148 Z" fill="#0c1312"/>
+    <circle cx="800" cy="154" r="11" fill="#e6d7a0"/>
+    <circle class="lamp-glow" cx="800" cy="160" r="400" fill="url(#gLamp)"/>
+    <ellipse cx="800" cy="770" rx="430" ry="60" fill="#e6d7a0" opacity=".05"/>
+  </svg>
+  <div class="vignette"></div>
+
+  <main class="monitor" id="monitor">
+    <div class="bezel">
+      <div class="screen" id="screen">
+        <header class="bar">
+          <h1 id="title">Дневник пациента</h1>
+          <div class="meta">
+            <span>Пациент: <b id="whoName">—</b></span>
+            <span id="cnt">Прочитано: 0 из 13</span>
+          </div>
+        </header>
+
+        <div class="body">
+          <nav class="days" aria-label="Записи по дням"><ol id="dayList"></ol></nav>
+          <section class="letter" id="letter">
+            <div class="empty" id="empty">
+              <p class="big">Выберите запись</p>
+              <p>Начните с первого дня. Новая запись открывается, когда дочитана предыдущая.</p>
+            </div>
+            <div id="entry" hidden>
+              <div class="l-head">
+                <h2 class="l-day" id="lDay">День 1</h2>
+                <span class="l-meta" id="lMeta"></span>
+              </div>
+              <p class="paper" id="line" aria-hidden="true"><span id="txt"></span><span class="cur blink" id="cur"></span></p>
+              <p class="sr-only" id="srText"></p>
+              <p class="l-end" id="lEnd"></p>
+              <button type="button" class="next" id="nextBtn" hidden>Открыть следующую запись</button>
+            </div>
+          </section>
+        </div>
+
+        <footer class="status">
+          <div class="left">
+            <span>Лампа: <span id="lamp">исправна</span></span>
+            <span id="note" aria-live="polite"></span>
+          </div>
+          <div class="right">
+            <button type="button" class="tgl" id="btnSnd" aria-pressed="true">Звук</button>
+            <button type="button" class="tgl" id="btnFast" aria-pressed="false">Ускорить печать</button>
+            <button type="button" class="tgl" id="btnSoft" aria-pressed="false">Мягкий режим</button>
+          </div>
+        </footer>
+
+        <div class="roll"></div>
+        <canvas class="noise" id="noise" aria-hidden="true"></canvas>
+
+        <div class="gate" id="gate">
+          <form class="gate-box" id="gateForm" autocomplete="off">
+            <p class="g-room">Палата № 7</p>
+            <h2 class="g-title">Терминал личных записей</h2>
+            <p class="g-text" id="gText">Пациентам разрешают вести дневник. Одна запись в день. Следующая откроется, когда будет дочитана предыдущая.</p>
+            <label class="g-label" for="nameIn">Имя для карты пациента</label>
+            <input id="nameIn" type="text" maxlength="24" placeholder="как к вам обращаться" autocomplete="off">
+            <label class="g-check" for="softIn"><input type="checkbox" id="softIn"> Мягкий режим: без тряски и вспышек</label>
+            <p class="g-warn">В игре есть мерцание экрана и резкие звуки. Лучше играть в наушниках.</p>
+            <button type="submit" class="go" id="goBtn">Войти в палату</button>
+            <button type="button" class="again-link" id="resetBtn" hidden>Начать сначала</button>
+          </form>
+        </div>
+      </div>
+      <div class="plate"><span class="model">Мед-терм 87</span><span class="led" aria-hidden="true"></span></div>
+    </div>
+  </main>
+
+  <div class="ending" id="ending" hidden>
+    <div class="card">
+      <p class="c-room">Палата № 7</p>
+      <p class="c-name" id="cName"></p>
+      <p class="c-hand" id="cHand"></p>
+      <p class="c-last" id="cLast"></p>
+      <button type="button" class="again-link" id="againBtn" hidden>Начать сначала</button>
+    </div>
+  </div>
+  <div class="blackout" id="blackout"></div>
+</div>
+
+<script>
+(() => {
+'use strict';
+
+/* ---------- helpers ---------- */
+const $ = s => document.querySelector(s);
+const rnd = (a, b) => a + Math.random() * (b - a);
+const pick = a => a[Math.floor(Math.random() * a.length)];
+const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+const CANCEL = Symbol('cancel');
+const TOTAL = 13;
+
+/* ---------- letters ----------
+   Markup inside the text:
+   {p:ms} pause · {s:ms} typing speed per character · {x:wrong>right} typo, pause, erase, retype
+   {d:n} erase n characters · {fx:name} interface glitch · {cut} the text breaks off · {N} the visitor's name */
+const LETTERS = [
+  { speed: 52, think: .05, text: [
+    `Сегодня мне разрешили вести {x:денвик>дневник}. Говорят, это помогает. {p:900}Не знаю, кому.`,
+    `Пишу, чтобы не забыть, кто я. {p:1100}Меня зовут…{p:2600} впрочем, имя неважно.`
+  ] },
+  { speed: 50, think: .05, text: [
+    `Утром принесли {x:каща>кашу}. Она была тёплой, и это почти порадовало.`,
+    `Санитар говорит мало, но смотрит так, будто ждёт, что я что-то вспомню. {p:1000}Я киваю. Он тоже кивает.`,
+    `В палате пахнет хлоркой и чем-то сладким, как засохший цветок. Окно не открывается. {p:700}Я проверил дважды.`
+  ] },
+  { speed: 48, think: .06, text: [
+    `Сегодня считал плитку на полу. Двенадцать рядов по девять. {p:1000}Потом посчитал ещё раз.{p:700} {x:Одиннадцать>Десять} рядов.`,
+    `Наверное, я просто устал. Врач говорит, что память — как мышца: её нужно тренировать. {p:1200}Я тренируюсь. Пока выходит только плитка.`
+  ] },
+  { speed: 46, think: .07, text: [
+    `Вчера санитар сказал, что я разговаривал во сне. {p:900}Я не помню.`,
+    `Но на подушке была чужая {fx:name}прядь волос.{p:1300} Я живу один в палате.{p:2200} Наверное.`
+  ] },
+  { speed: 40, think: .05, text: [
+    `Я в палате {x:4>7}. Так написано на двери. {p:1100}Вчера было иначе?{p:1500} Нет. Нет, конечно. Я просто сбиваюсь.`,
+    `Ночью кто-то поправил одеяло. Я лежал с закрытыми глазами и слушал, как шуршит ткань. {p:900}Потом шаги ушли. {p:700}Дверь не скрипнула. {p:600}А она всегда скрипит.{fx:shake}`
+  ] },
+  { speed: 38, think: .05, ragged: true, text: [
+    `Они говорят, что со мной всё в порядке. Они говорят это слишком ровно, будто читают с бумажки.`,
+    `Сегодня я спросил, какое число. {p:900}Санитар посмотрел на врача, а врач — на потолок. {p:1100}Никто не ответил.`,
+    `Я записал в углу тетради «число», а дальше рука отказа{cut}`
+  ] },
+  { speed: 30, think: .02, ragged: true, text: [
+    `Они меняют {x:лампучку>лампочку} каждый день. {fx:flicker}Я проверял — она не перегорает.`,
+    `Просто они хотят, чтобы я думал, что прошёл ещё один день. {p:800}Я сбился со счёта.`,
+    `Один. Два. {p:800}Три. {x:Пять>Три}. {p:700}Нет. {fx:corrupt}Сначала.`
+  ] },
+  { speed: 28, think: .02, ragged: true, text: [
+    `В стене кто-то стучит. Три раза, пауза, три раза.{fx:glitch}`,
+    `Я постучал в ответ. Мне ответили точно так же — слишком точно, как эхо, которое не опаздывает. {p:1300}Эхо должно опаздывать.`,
+    `Я перестал стучать. {p:1500}Стук не перестал.{fx:shake}`
+  ] },
+  { speed: 26, think: .02, ragged: true, text: [
+    `Сегодня из умывальной убрали зеркало. Сказали — трещина. {p:900}Я осмотрел стену: ни следов от креплений, ни дыр. Чистая краска. {p:900}Будто зеркала там никогда не было.`,
+    `Я спросил, что там висело. Санитар улыбнулся и сказал: «Тебе показалось».{fx:name} {p:1100}Здесь все улыбаются одинаково. Я начинаю это замечать.`
+  ] },
+  { speed: 24, think: .02, ragged: true, text: [
+    `Сегодня я видел себя в коридоре.{fx:flicker} {p:1300}Я шёл мимо и не узнал.{p:1700} Он улыбнулся.{fx:glitch} {p:1500}У меня не было причин улыбаться.`,
+    `{p:1800}Я вернулся в палату и посмотрел на свои руки. {x:Они были чьи-то>Они были моими}. Кажется.`
+  ] },
+  { speed: 14, think: 0, ragged: true, text: [
+    `Я пишу быстро, пока он не вернулся.`,
+    `Он ходит по моей палате. Садится на мою кровать и смотрит, как я пишу. {fx:shake}У него моё лицо, только старше. Усталее.`,
+    `Он ничего не говорит. {p:700}Он только смотрит на экран — не на меня. {p:500}Прямо на стекло. {fx:glitch}Будто видит кого-то с той стороны.`
+  ] },
+  { speed: 10, think: 0, ragged: true, text: [
+    `Я понял, почему лампочка не перегорает. Её никто не включает. {fx:flicker}Свет идёт не от неё. Он идёт с другой стороны стекла.`,
+    `Я пишу — а кто-то читает. {fx:corrupt}Каждое слово. Я чувствую, как взгляд ползёт по строке вслед за курсором.{fx:glitch}`,
+    `Если читатель остановится, остановлюсь и я. Поэтому они не выпускают меня из палаты. Поэтому дверь не{p:300} {x:открываеться>открывается}. {fx:shake}Поэтому он приходит и смотрит, как я пи{cut}`
+  ] },
+  { speed: 70, think: 0, text: [
+    `{p:2600}Ты ведь тоже это видишь?{p:2200} {x:Не прикидывайся>Не притворяйся}. {fx:glitch}{p:1500}Ты открыл не тот файл. {fx:shake}{p:1100}Теперь ты тоже {x:зтесь>здесь}, {N}.{s:24}{fx:storm}`,
+    `{p:700}Закрой страницу. {p:1300}Пожалуйста.{s:6}{fx:glitch}`,
+    `{p:500}ЗАКРОЙ СТРАНИЦУ.`
+  ] }
+];
+
+const FOREIGN = ['К. Лебедев', 'Пациент № 6', 'А. Воронцов', 'Он', 'Н. Сомов', 'Л. Вересов'];
+const WHISPER = { 7: .3, 8: .35, 9: .4, 10: .45, 11: .55, 12: .65, 13: .8 };
+const GLYPHS = '▓▒░█#@%?';
+const intensityFor = d => d < 4 ? 0 : d < 7 ? 1 : d < 10 ? 2 : d < 13 ? 3 : 4;
+const baseTitle = d => d >= 10 ? 'Дневник пациента?' : 'Дневник пациента';
+
+function parse(src, name) {
+  const ops = [];
+  const re = /\{([^}]*)\}|([^{]+)/g;
+  let m;
+  while ((m = re.exec(src))) {
+    if (m[2] !== undefined) { for (const ch of m[2]) ops.push({ t: 'c', ch }); continue; }
+    const i = m[1].indexOf(':');
+    const k = i < 0 ? m[1] : m[1].slice(0, i);
+    const v = i < 0 ? '' : m[1].slice(i + 1);
+    if (k === 'N') { for (const ch of name) ops.push({ t: 'c', ch }); }
+    else if (k === 'p') ops.push({ t: 'p', ms: +v });
+    else if (k === 's') ops.push({ t: 's', ms: +v });
+    else if (k === 'x') { const j = v.indexOf('>'); ops.push({ t: 'x', a: v.slice(0, j), b: v.slice(j + 1) }); }
+    else if (k === 'd') ops.push({ t: 'd', n: +v });
+    else if (k === 'fx') ops.push({ t: 'fx', name: v });
+    else if (k === 'cut') ops.push({ t: 'cut' });
+  }
+  return ops;
+}
+function finalOf(ops) {
+  let s = '';
+  for (const o of ops) {
+    if (o.t === 'c') s += o.ch;
+    else if (o.t === 'x') s += o.b;
+    else if (o.t === 'd') s = s.slice(0, Math.max(0, s.length - o.n));
+    else if (o.t === 'cut') break;
+  }
+  return s;
+}
+
+/* ---------- sound (synthesized, no files) ---------- */
+const Snd = (() => {
+  let ac = null, master = null, noise = null, on = true, humG = null;
+  let wG = null, wF1 = null, wF2 = null, wPan = null, bG = null, bF = null;
+  let wLevel = 0, bLevel = 0;
+
+  function burst(t, dur, gain, freq, q) {
+    const src = ac.createBufferSource();
+    src.buffer = noise;
+    const f = ac.createBiquadFilter();
+    f.type = 'bandpass'; f.frequency.value = freq; f.Q.value = q || 1;
+    const g = ac.createGain();
+    g.gain.setValueAtTime(.0001, t);
+    g.gain.exponentialRampToValueAtTime(gain, t + .003);
+    g.gain.exponentialRampToValueAtTime(.0001, t + dur);
+    src.connect(f); f.connect(g); g.connect(master);
+    src.start(t, Math.random() * 1.4, dur + .02);
+  }
+  function loopNoise() {
+    const s = ac.createBufferSource();
+    s.buffer = noise; s.loop = true; s.start();
+    return s;
+  }
+  function breathCycle() {
+    if (!ac) return;
+    if (bLevel > .001) {
+      const t = ac.currentTime, L = bLevel * .22;
+      bF.frequency.cancelScheduledValues(t);
+      bF.frequency.setValueAtTime(500, t);
+      bF.frequency.linearRampToValueAtTime(1200, t + 1.5);
+      bF.frequency.linearRampToValueAtTime(400, t + 3.6);
+      bG.gain.cancelScheduledValues(t);
+      bG.gain.setValueAtTime(.0001, t);
+      bG.gain.linearRampToValueAtTime(L, t + 1.4);
+      bG.gain.linearRampToValueAtTime(L * .2, t + 1.7);
+      bG.gain.linearRampToValueAtTime(L * .8, t + 2.3);
+      bG.gain.linearRampToValueAtTime(.0001, t + 3.6);
+    }
+    setTimeout(breathCycle, 4200);
+  }
+  function whisperTick() {
+    if (!ac) return;
+    if (wLevel > .001) {
+      const t = ac.currentTime;
+      wG.gain.setTargetAtTime(wLevel * .085 * Math.pow(Math.random(), 1.4), t, .05);
+      wF1.frequency.setTargetAtTime(1400 + Math.random() * 1500, t, .08);
+      wF2.frequency.setTargetAtTime(3000 + Math.random() * 1800, t, .08);
+      if (Math.random() < .25) wPan.pan.setTargetAtTime(Math.random() * 1.6 - .8, t, .2);
+    } else {
+      wG.gain.setTargetAtTime(0, ac.currentTime, .1);
+    }
+  }
+  function init() {
+    if (ac) { if (ac.resume) ac.resume(); return; }
+    const AC = window.AudioContext || window.webkitAudioContext;
+    if (!AC) return;
+    try {
+      ac = new AC();
+      master = ac.createGain();
+      master.gain.value = on ? .9 : 0;
+      master.connect(ac.destination);
+      const len = ac.sampleRate * 2;
+      noise = ac.createBuffer(1, len, ac.sampleRate);
+      const d = noise.getChannelData(0);
+      for (let i = 0; i < len; i++) d[i] = Math.random() * 2 - 1;
+      // monitor hum
+      humG = ac.createGain(); humG.gain.value = 1; humG.connect(master);
+      [[50, .018], [100, .008]].forEach(([f, g]) => {
+        const o = ac.createOscillator(); o.type = 'sine'; o.frequency.value = f;
+        const og = ac.createGain(); og.gain.value = g;
+        o.connect(og); og.connect(humG); o.start();
+      });
+      // whisper
+      wG = ac.createGain(); wG.gain.value = 0;
+      wPan = ac.createStereoPanner ? ac.createStereoPanner() : ac.createGain();
+      wF1 = ac.createBiquadFilter(); wF1.type = 'bandpass'; wF1.frequency.value = 1800; wF1.Q.value = 3;
+      wF2 = ac.createBiquadFilter(); wF2.type = 'bandpass'; wF2.frequency.value = 3400; wF2.Q.value = 4;
+      const ws = loopNoise();
+      ws.connect(wF1); ws.connect(wF2); wF1.connect(wG); wF2.connect(wG);
+      wG.connect(wPan); wPan.connect(master);
+      // breath
+      bG = ac.createGain(); bG.gain.value = 0;
+      bF = ac.createBiquadFilter(); bF.type = 'lowpass'; bF.frequency.value = 600; bF.Q.value = .7;
+      const bs = loopNoise();
+      bs.connect(bF); bF.connect(bG); bG.connect(master);
+      setInterval(whisperTick, 150);
+      breathCycle();
+    } catch (e) { ac = null; }
+  }
+  return {
+    init,
+    click(space) {
+      if (!ac || !on || (space && Math.random() < .5)) return;
+      const t = ac.currentTime;
+      burst(t, .045, .1 + Math.random() * .04, 1800 + Math.random() * 1800, 1.2);
+      const o = ac.createOscillator(); o.type = 'triangle';
+      o.frequency.setValueAtTime(140 + Math.random() * 30, t);
+      o.frequency.exponentialRampToValueAtTime(60, t + .05);
+      const g = ac.createGain();
+      g.gain.setValueAtTime(.0001, t);
+      g.gain.exponentialRampToValueAtTime(.05, t + .003);
+      g.gain.exponentialRampToValueAtTime(.0001, t + .06);
+      o.connect(g); g.connect(master); o.start(t); o.stop(t + .08);
+    },
+    back() {
+      if (!ac || !on) return;
+      burst(ac.currentTime, .05, .08, 1100 + Math.random() * 500, 1);
+    },
+    glitch(l) {
+      if (!ac || !on) return;
+      const t = ac.currentTime, dur = .12 + Math.random() * .18;
+      const o = ac.createOscillator(); o.type = 'square';
+      o.frequency.setValueAtTime(80 + Math.random() * 400, t);
+      o.frequency.setValueAtTime(30 + Math.random() * 900, t + dur / 2);
+      const g = ac.createGain();
+      g.gain.setValueAtTime(.0001, t);
+      g.gain.exponentialRampToValueAtTime(.045 * l, t + .01);
+      g.gain.exponentialRampToValueAtTime(.0001, t + dur);
+      o.connect(g); g.connect(master); o.start(t); o.stop(t + dur + .02);
+      burst(t, dur, .07 * l, 3000, .8);
+    },
+    buzz() {
+      if (!ac || !on) return;
+      const t = ac.currentTime;
+      const o = ac.createOscillator(); o.type = 'sawtooth'; o.frequency.value = 100;
+      const g = ac.createGain();
+      g.gain.setValueAtTime(.0001, t);
+      [0, .1, .22, .4, .55].forEach((dt, i) => {
+        g.gain.setValueAtTime(i % 2 === 0 ? .03 : .0001, t + dt);
+      });
+      g.gain.setValueAtTime(.0001, t + .8);
+      o.connect(g); g.connect(master); o.start(t); o.stop(t + .85);
+    },
+    powerOff() {
+      if (!ac || !on) return;
+      const t = ac.currentTime;
+      const o = ac.createOscillator(); o.type = 'sine';
+      o.frequency.setValueAtTime(900, t);
+      o.frequency.exponentialRampToValueAtTime(30, t + .7);
+      const g = ac.createGain();
+      g.gain.setValueAtTime(.16, t);
+      g.gain.exponentialRampToValueAtTime(.0001, t + .8);
+      o.connect(g); g.connect(master); o.start(t); o.stop(t + .85);
+      burst(t, .5, .12, 600, .6);
+      humG.gain.setTargetAtTime(0, t, .15);
+    },
+    setWhisper(v) { wLevel = v; },
+    setBreath(v) { bLevel = v; },
+    setOn(v) { on = v; if (master) master.gain.setTargetAtTime(v ? .9 : 0, ac.currentTime, .05); }
+  };
+})();
+
+/* ---------- state ---------- */
+const KEY = 'dnevnik-pacienta-v1';
+const state = { name: 'Посетитель', unlocked: 1, done: [], ended: false };
+function save() { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) { /* storage may be unavailable */ } }
+function load() {
+  try {
+    const s = JSON.parse(localStorage.getItem(KEY) || 'null');
+    if (s && typeof s === 'object') {
+      state.name = String(s.name || state.name).slice(0, 24);
+      state.unlocked = clamp(+s.unlocked || 1, 1, TOTAL);
+      state.done = Array.isArray(s.done) ? s.done.filter(n => n >= 1 && n <= TOTAL) : [];
+      state.ended = !!s.ended;
+      return state.done.length > 0 || state.ended || state.unlocked > 1;
+    }
+  } catch (e) { /* ignore */ }
+  return false;
+}
+function resetAll() {
+  state.done = []; state.unlocked = 1; state.ended = false;
+  save();
+  location.reload();
+}
+
+let soft = false, fast = false, sndOn = true;
+let viewDay = 0, token = 0, gameOn = false, finaleActive = false;
+let typingNow = false, cursorLock = false, storm = false, stormTimer = 0;
+let buf = [];
+const ov = new Map();
+
+/* ---------- DOM ---------- */
+const monitor = $('#monitor'), screen = $('#screen'), ward = $('#ward'), blackout = $('#blackout');
+const h1 = $('#title'), whoName = $('#whoName');
+const letterEl = $('#letter'), line = $('#line'), txt = $('#txt'), cur = $('#cur');
+const gate = $('#gate'), nextBtn = $('#nextBtn'), noteEl = $('#note');
+
+const LOCK = '<svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="2.5" y="6.5" width="9" height="6" rx="1"/><path d="M4.5 6.5V4.5a2.5 2.5 0 0 1 5 0v2"/></svg>';
+const TICK = '<svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2.5 7.5 5.5 10.5 11.5 3.5"/></svg>';
+
+function render() {
+  let s = '';
+  for (let i = 0; i < buf.length; i++) s += ov.has(i) ? ov.get(i) : buf[i];
+  txt.textContent = s;
+  letterEl.scrollTop = letterEl.scrollHeight;
+}
+function setCursor(mode) { cur.className = 'cur ' + mode; }
+const wait = async (ms, my) => {
+  await sleep(ms * (fast ? .15 : 1));
+  if (my !== token) throw CANCEL;
+};
+
+/* ---------- interface effects ---------- */
+function restart(el, cls, ms) {
+  el.classList.remove(cls);
+  void el.offsetWidth;
+  el.classList.add(cls);
+  setTimeout(() => el.classList.remove(cls), ms);
+}
+const nz = $('#noise'), nctx = nz.getContext('2d');
+nz.width = 160; nz.height = 90;
+let noiseOn = false, noiseLoop = false, noiseTimer = 0;
+function noiseFrame() {
+  if (!noiseOn) { noiseLoop = false; return; }
+  const im = nctx.createImageData(160, 90), d = im.data;
+  for (let i = 0; i < d.length; i += 4) { const v = Math.random() * 255 | 0; d[i] = d[i + 1] = d[i + 2] = v; d[i + 3] = 255; }
+  nctx.putImageData(im, 0, 0);
+  setTimeout(() => requestAnimationFrame(noiseFrame), 70);
+}
+function showNoise(ms, alpha) {
+  if (soft) return;
+  nz.style.opacity = alpha;
+  noiseOn = true;
+  if (!noiseLoop) { noiseLoop = true; noiseFrame(); }
+  clearTimeout(noiseTimer);
+  noiseTimer = setTimeout(() => { noiseOn = false; nz.style.opacity = 0; }, ms);
+}
+function shake() { if (soft) return; restart(monitor, 'shake', 420); }
+function glitch() {
+  if (soft) { restart(screen, 'glitch-soft', 400); return; }
+  restart(screen, 'glitch', 300);
+  showNoise(280, .22);
+}
+function corrupt() {
+  const idx = [];
+  buf.forEach((c, i) => { if (c !== ' ' && c !== '\n') idx.push(i); });
+  if (!idx.length) return;
+  const n = Math.min(idx.length, 3 + Math.floor(Math.random() * 6));
+  for (let k = 0; k < n; k++) ov.set(pick(idx), pick(GLYPHS));
+  render();
+  setTimeout(() => { ov.clear(); render(); }, 230);
+}
+function lampFlicker() {
+  restart(ward, 'flick', 1200);
+  restart(blackout, 'go', soft ? 1700 : 1100);
+}
+let nameBusy = false;
+function flashName() {
+  if (nameBusy) return;
+  nameBusy = true;
+  const pool = intensityFor(viewDay) >= 3 ? FOREIGN.concat(['Читатель']) : FOREIGN;
+  whoName.textContent = pick(pool);
+  whoName.classList.add('foreign');
+  setTimeout(() => { whoName.textContent = state.name; whoName.classList.remove('foreign'); nameBusy = false; }, rnd(160, 420));
+}
+let titleBusy = false;
+function flashTitle() {
+  const d = viewDay;
+  if (titleBusy || d < 4) return;
+  const v = d < 7 ? ['Дневник пациента?']
+    : d < 10 ? ['Дневник пациента?', 'Дневник пациента??', 'Дневник пациент']
+    : d < 13 ? ['Дневник читателя?', 'Дневник пациента?', 'Дневник читателя']
+    : ['Дневник ' + state.name, 'Дневник читателя', 'Закрой'];
+  titleBusy = true;
+  const t = pick(v);
+  h1.textContent = t; document.title = t;
+  setTimeout(() => { h1.textContent = baseTitle(viewDay); document.title = baseTitle(viewDay); titleBusy = false; }, rnd(900, 1900));
+}
+function startStorm() {
+  storm = true;
+  (function step() {
+    if (!storm) return;
+    const r = Math.random();
+    if (r < .4) { glitch(); Snd.glitch(.8); }
+    else if (r < .7) corrupt();
+    else { shake(); Snd.glitch(.5); }
+    stormTimer = setTimeout(step, rnd(250, 700));
+  })();
+}
+function doFx(name) {
+  switch (name) {
+    case 'shake': shake(); Snd.glitch(.6); break;
+    case 'glitch': glitch(); Snd.glitch(1); break;
+    case 'corrupt': corrupt(); Snd.glitch(.4); break;
+    case 'flicker': lampFlicker(); Snd.buzz(); break;
+    case 'name': flashName(); break;
+    case 'title': flashTitle(); break;
+    case 'storm': startStorm(); break;
+  }
+}
+
+/* ambient glitches between and during letters */
+let aTimer = 0;
+function ambient() {
+  clearTimeout(aTimer);
+  const lvl = intensityFor(viewDay);
+  if (lvl > 0 && gameOn && !finaleActive) {
+    const pool = lvl === 1 ? ['name', 'title']
+      : lvl === 2 ? ['name', 'title', 'flicker', 'corrupt']
+      : lvl === 3 ? ['name', 'title', 'flicker', 'corrupt', 'glitch', 'shake']
+      : ['glitch', 'shake', 'corrupt', 'flicker', 'name', 'title', 'glitch'];
+    doFx(pick(pool));
+  }
+  aTimer = setTimeout(ambient, rnd(2400, 6200) / (1 + lvl * .35));
+}
+
+/* the cursor with a mind of its own */
+let cTimer = 0;
+function cursorLoop() {
+  clearTimeout(cTimer);
+  const lvl = intensityFor(viewDay);
+  if (!typingNow && !cursorLock && viewDay && !finaleActive) {
+    const back = () => { if (!typingNow && !cursorLock) setCursor('blink'); };
+    const r = Math.random();
+    if (r < .3) { setCursor('freeze'); setTimeout(back, rnd(1800, 4200)); }
+    else if (r < .5) { setCursor('fast'); setTimeout(back, rnd(1200, 2500)); }
+    else if (r < .62) { setCursor('gone'); setTimeout(back, rnd(900, 1800)); }
+    else if (r < .78 && lvl >= 1) { cur.classList.add('twitch'); setTimeout(() => cur.classList.remove('twitch'), 520); }
+    else if (r < .9 && lvl >= 2) {
+      line.insertBefore(cur, txt);
+      setTimeout(() => line.appendChild(cur), 260);
+    } else setCursor('blink');
+  }
+  cTimer = setTimeout(cursorLoop, rnd(2600, 6000));
+}
+
+/* ---------- typing engine ---------- */
+function charDelay(ch, prev, speed, L) {
+  let d = speed * rnd(.55, 1.45);
+  const sc = clamp(speed / 50, .15, 1);
+  if (ch === '\n') d += rnd(300, 600) * sc;
+  else if (ch === ' ' && '.!?'.includes(prev)) d += rnd(260, 520) * sc;
+  else if (ch === ' ' && prev === ',') d += rnd(120, 260) * sc;
+  else if (prev === '…') d += rnd(450, 700) * sc;
+  else if (prev === '—' || ch === '—') d += rnd(120, 300) * sc;
+  if (L.ragged && Math.random() < .1) d += rnd(120, 420);
+  return d;
+}
+async function typeOps(ops, L, my) {
+  let speed = L.speed, prev = '', cut = false;
+  buf = []; ov.clear(); render();
+  typingNow = true; cursorLock = false; setCursor('typing');
+  for (const o of ops) {
+    if (o.t === 'c') {
+      buf.push(o.ch); render(); Snd.click(o.ch === ' ' || o.ch === '\n');
+      await wait(charDelay(o.ch, prev, speed, L), my);
+      if (o.ch === ' ' && speed > 20 && Math.random() < L.think) {
+        setCursor('idle'); await wait(rnd(900, 1900), my); setCursor('typing');
+      }
+      prev = o.ch;
+    } else if (o.t === 'p') {
+      setCursor(Math.random() < .5 ? 'freeze' : 'idle');
+      await wait(o.ms, my);
+      setCursor('typing');
+    } else if (o.t === 's') {
+      speed = o.ms;
+    } else if (o.t === 'x') {
+      let k = 0;
+      while (k < o.a.length && k < o.b.length && o.a[k] === o.b[k]) k++;
+      for (const ch of o.a) { buf.push(ch); render(); Snd.click(); await wait(speed * rnd(.6, 1.3), my); }
+      setCursor('freeze');
+      await wait(rnd(550, 1100) * clamp(speed / 50, .5, 1), my);
+      const bd = clamp(speed * 1.1, 26, 80);
+      for (let j = 0; j < o.a.length - k; j++) { buf.pop(); render(); Snd.back(); await wait(bd, my); }
+      await wait(rnd(160, 380), my);
+      setCursor('typing');
+      for (const ch of o.b.slice(k)) { buf.push(ch); render(); Snd.click(); await wait(speed * rnd(.7, 1.3), my); }
+      prev = '';
+    } else if (o.t === 'd') {
+      for (let j = 0; j < o.n; j++) { buf.pop(); render(); Snd.back(); await wait(60, my); }
+    } else if (o.t === 'fx') {
+      doFx(o.name);
+    } else if (o.t === 'cut') {
+      cut = true; break;
+    }
+  }
+  typingNow = false;
+  return cut;
+}
+
+/* ---------- days ---------- */
+function metaFor(d) {
+  const t = new Date();
+  const hm = String(t.getHours()).padStart(2, '0') + ':' + String(t.getMinutes()).padStart(2, '0');
+  if (d <= 3) return 'Запись № ' + d + ' · дата не указана';
+  if (d <= 7) return 'Запись № ' + d + ' · дата зачёркнута';
+  if (d <= 10) return 'Запись № ' + d + ' · дата стёрта';
+  if (d === 11) return 'Запись № 11 · сегодня, ' + hm;
+  if (d === 12) return 'Запись № 12 · ' + hm + ' · время совпало';
+  return 'Запись № 13 · ' + hm + ' · читается сейчас';
+}
+function lampText(d) {
+  return d < 7 ? 'исправна' : d < 12 ? 'не перегорает' : d === 12 ? 'горит с этой стороны' : 'горит';
+}
+const REDACT = Array.from({ length: TOTAL + 1 }, (_, d) => '█'.repeat(5 + (d * 3) % 7));
+
+function renderDays(freshDay) {
+  const ol = $('#dayList');
+  ol.innerHTML = '';
+  for (let d = 1; d <= TOTAL; d++) {
+    const locked = d > state.unlocked, done = state.done.includes(d);
+    const li = document.createElement('li');
+    const b = document.createElement('button');
+    b.type = 'button'; b.className = 'day'; b.disabled = locked;
+    if (locked) b.setAttribute('aria-label', 'День ' + d + ', заперто');
+    if (d === viewDay) b.setAttribute('aria-current', 'true');
+    if (d === freshDay && !done) b.classList.add('fresh');
+    const left = document.createElement('span');
+    const n = document.createElement('span'); n.className = 'd-n'; n.textContent = 'День ' + d;
+    const s = document.createElement('span'); s.className = 'd-s';
+    s.textContent = locked ? REDACT[d] : done ? 'прочитано' : d === viewDay ? 'читаете' : 'новая запись';
+    left.append(n, s);
+    const ic = document.createElement('span'); ic.className = 'd-i'; ic.innerHTML = locked ? LOCK : done ? TICK : '';
+    b.append(left, ic);
+    b.addEventListener('click', () => openDay(d));
+    li.append(b);
+    ol.append(li);
+  }
+  $('#cnt').textContent = 'Прочитано: ' + state.done.length + ' из ' + TOTAL;
+}
+function showNext(d) {
+  nextBtn.textContent = 'Открыть день ' + d;
+  nextBtn.onclick = () => openDay(d);
+  nextBtn.hidden = false;
+}
+
+async function openDay(d) {
+  if (finaleActive || !gameOn || d > state.unlocked) return;
+  token++;
+  const my = token;
+  typingNow = false; storm = false; clearTimeout(stormTimer);
+  viewDay = d;
+  $('#empty').hidden = true; $('#entry').hidden = false;
+  $('#lDay').textContent = 'День ' + d;
+  $('#lMeta').textContent = metaFor(d);
+  $('#lamp').textContent = lampText(d);
+  h1.textContent = baseTitle(d); document.title = baseTitle(d);
+  noteEl.textContent = '';
+  $('#lEnd').textContent = ''; $('#srText').textContent = '';
+  nextBtn.hidden = true;
+  line.appendChild(cur);
+  renderDays();
+  letterEl.scrollTop = 0;
+  const alreadyDone = state.done.includes(d);
+  Snd.setWhisper((WHISPER[d] || 0) * (alreadyDone ? .6 : 1));
+  Snd.setBreath(d === TOTAL ? .9 : 0);
+  ward.classList.toggle('t3', intensityFor(d) >= 3);
+
+  const L = LETTERS[d - 1];
+  const ops = parse(L.text.join('\n\n'), state.name);
+  if (alreadyDone) {
+    buf = [...finalOf(ops)]; ov.clear(); render(); letterEl.scrollTop = 0;
+    const cut = ops.some(o => o.t === 'cut');
+    cursorLock = cut; setCursor(cut ? 'freeze' : 'blink');
+    $('#lEnd').textContent = cut ? 'запись оборвана' : 'запись окончена';
+    $('#srText').textContent = finalOf(ops);
+    if (d < TOTAL) showNext(d + 1);
+    else if (!state.ended) setTimeout(finale, 1200);
+    return;
+  }
+  try {
+    const cut = await typeOps(ops, L, my);
+    await finishLetter(d, cut, my, ops);
+  } catch (e) {
+    if (e !== CANCEL) console.error(e);
+  }
+}
+
+async function finishLetter(d, cut, my, ops) {
+  cursorLock = cut;
+  setCursor(cut ? 'freeze' : 'blink');
+  $('#lEnd').textContent = cut ? 'запись оборвана' : 'запись окончена';
+  $('#srText').textContent = finalOf(ops);
+  if (!state.done.includes(d)) state.done.push(d);
+  if (d < TOTAL && state.unlocked < d + 1) state.unlocked = d + 1;
+  save();
+  await wait(cut ? 900 : 500, my);
+  if (d < TOTAL) {
+    renderDays(d + 1);
+    showNext(d + 1);
+    noteEl.textContent = 'Открыта запись: день ' + (d + 1);
+  } else {
+    renderDays();
+    await wait(1800, my);
+    finale();
+  }
+}
+
+/* ---------- finale ---------- */
+function spawnGhost() {
+  const g = document.createElement('span');
+  g.className = 'ghost';
+  g.textContent = pick(['ЗАКРОЙ СТРАНИЦУ', 'ЗАКРОЙ', 'ТЫ ТОЖЕ ЗДЕСЬ', 'Закрой страницу', 'не смотри', state.name]);
+  g.style.left = rnd(2, 66) + '%';
+  g.style.top = rnd(8, 88) + '%';
+  g.style.fontSize = rnd(1, 3.2) + 'rem';
+  g.style.transform = 'rotate(' + rnd(-6, 6) + 'deg)';
+  screen.append(g);
+  setTimeout(() => g.remove(), rnd(260, 820));
+}
+function scramble(ms) {
+  const t0 = performance.now();
+  const iv = setInterval(() => {
+    const p = (performance.now() - t0) / ms;
+    ov.clear();
+    for (let i = 0; i < buf.length; i++) {
+      if (buf[i] !== ' ' && buf[i] !== '\n' && Math.random() < p * .75) ov.set(i, pick(GLYPHS));
+    }
+    render();
+    if (p >= 1) clearInterval(iv);
+  }, 90);
+}
+async function typeInto(el, text, ms) {
+  for (const ch of text) {
+    el.textContent += ch;
+    Snd.click(ch === ' ');
+    await sleep(ms * rnd(.6, 1.4));
+  }
+}
+async function finale() {
+  if (finaleActive) return;
+  finaleActive = true; typingNow = false; cursorLock = true;
+  setCursor('freeze');
+  clearTimeout(aTimer); clearTimeout(cTimer);
+  nextBtn.hidden = true;
+  document.querySelectorAll('.day').forEach(b => { b.disabled = true; });
+  Snd.setBreath(1); Snd.setWhisper(.9);
+  h1.textContent = 'Дневник ' + state.name;
+  whoName.textContent = 'Читатель'; whoName.classList.add('foreign');
+  startStorm();
+  const ghosts = setInterval(spawnGhost, soft ? 420 : 160);
+  scramble(3600);
+  await sleep(3800);
+  clearInterval(ghosts);
+  storm = false; clearTimeout(stormTimer);
+  Snd.powerOff();
+  showNoise(900, .5);
+  monitor.classList.add('off');
+  await sleep(soft ? 1400 : 950);
+  monitor.hidden = true;
+  Snd.setWhisper(0); Snd.setBreath(.35);
+  document.title = 'Палата № 7';
+  ward.classList.remove('dim'); ward.classList.add('lit');
+  lampFlicker(); Snd.buzz();
+  await sleep(2600);
+  ward.classList.add('door-open');
+  await sleep(3200);
+  $('#ending').hidden = false;
+  await typeInto($('#cName'), 'Пациент: ' + state.name, 70);
+  await sleep(1400);
+  await typeInto($('#cHand'), 'Сегодня мне разрешили вести дневник.', 85);
+  await sleep(2200);
+  await typeInto($('#cLast'), 'Закрой страницу.', 130);
+  state.ended = true; save();
+  $('#againBtn').hidden = false;
+}
+
+/* ---------- gate & controls ---------- */
+const hasProgress = load();
+const mq = window.matchMedia ? window.matchMedia('(prefers-reduced-motion: reduce)') : null;
+$('#softIn').checked = !!(mq && mq.matches);
+if (hasProgress) {
+  $('#nameIn').value = state.name;
+  $('#resetBtn').hidden = false;
+  if (state.ended) {
+    $('#gText').textContent = 'Запись закончена. Дневник уже открыт на ваше имя. Можно начать сначала.';
+    $('#goBtn').textContent = 'Войти снова';
+  } else {
+    $('#gText').textContent = 'Ваши записи сохранены. Можно продолжить с того места, где вы остановились.';
+    $('#goBtn').textContent = 'Продолжить';
+  }
+}
+$('#resetBtn').addEventListener('click', resetAll);
+$('#againBtn').addEventListener('click', resetAll);
+
+function setSoft(v) {
+  soft = v;
+  document.body.classList.toggle('soft', v);
+  $('#btnSoft').setAttribute('aria-pressed', String(v));
+}
+$('#btnSoft').addEventListener('click', () => setSoft(!soft));
+$('#btnFast').addEventListener('click', e => {
+  fast = !fast;
+  e.currentTarget.setAttribute('aria-pressed', String(fast));
+});
+$('#btnSnd').addEventListener('click', e => {
+  sndOn = !sndOn;
+  Snd.setOn(sndOn);
+  e.currentTarget.setAttribute('aria-pressed', String(sndOn));
+});
+
+$('#gateForm').addEventListener('submit', e => {
+  e.preventDefault();
+  state.name = $('#nameIn').value.trim().slice(0, 24) || 'Посетитель';
+  if (state.ended) { state.done = []; state.unlocked = 1; state.ended = false; }
+  save();
+  setSoft($('#softIn').checked);
+  Snd.init();
+  gate.hidden = true;
+  gameOn = true;
+  whoName.textContent = state.name;
+  renderDays(state.done.length ? 0 : 1);
+  ambient(); cursorLoop();
+});
+renderDays(0);
+})();
+</script>
+
+</body></html>
